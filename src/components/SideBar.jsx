@@ -9,9 +9,9 @@ sx={{overflowY:"auto",height:{sx:"auto",md:"95%"}
 {categories.map(category=>(<button 
 onClick={()=>setSelectedCategory(category.name)}
 className="category-btn"
-style={{background:category.name===selectedCategory&&"#FC1503",color:"#FFF"}} 
+style={{background:category.name===selectedCategory&&"#00abe4",color:"#FFF"}} 
 key={category.name}>
-    <span style={{color:category.name===selectedCategory?"White":"red",marginRight:"15px"}}>{category.icon}</span>
+    <span style={{color:category.name===selectedCategory?"White":"#00abe4",marginRight:"15px"}}>{category.icon}</span>
     <span
     style={{opacity:category.name===selectedCategory?"1":"0.8"}}
     >{category.name}</span>

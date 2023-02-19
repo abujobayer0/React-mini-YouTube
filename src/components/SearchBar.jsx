@@ -7,9 +7,9 @@ const SearchBar = () => {
   const navigate=useNavigate()
   const handleSubmit=(e)=>{
 e.preventDefault()
+setSearchTerm('')
 if(searchTerm){
 navigate(`/search/${searchTerm}`)
-setSearchTerm('')
 }
   }
     return (
@@ -24,7 +24,7 @@ placeholder='Search...'
 onChange={(e)=>setSearchTerm(e.target.value)}
 
 />
-<IconButton type="submit" sx={{p:"10px" ,color:"red"}}>
+<IconButton type="submit" sx={{p:"10px" ,color:"#00abe4"}}>
     <Search/>
 </IconButton>
       </Paper>

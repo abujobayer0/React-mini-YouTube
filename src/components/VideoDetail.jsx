@@ -17,7 +17,7 @@ fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(data=
 
   },[id])
 
-  return <Box minHeight="95vh">
+  return <Box minHeight="95vh" sx={{background:"linear-gradient(90deg, rgba(15,43,107,1) 0%, rgba(76,40,158,1) 50%, rgba(21,14,75,1) 100%)"}}>
     <Stack direction={{xs:"column",md:"row"}}>
 <Box flex={1}>
 <Box sx={{width:'100%' ,position:"sticky",top:"86px"}}>

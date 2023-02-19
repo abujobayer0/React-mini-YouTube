@@ -17,10 +17,10 @@ const ChannelDetail = () => {
 
   },[id])
   console.log(videos)
-  return <Box minHeight="95vh">
+  return <Box minHeight="95vh" sx={{background:"linear-gradient(90deg, rgba(15,43,107,1) 0%, rgba(76,40,158,1) 50%, rgba(21,14,75,1) 100%)"}}>
     <Box>
       <div style={{
-        background: "linear-gradient(90deg, rgba(127,190,255,1) 34%, rgba(80,92,255,1) 100%",zIndex:10,height
+        background: "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",zIndex:10,height
         :"300px"
       }}/>
       <ChannelCard 
