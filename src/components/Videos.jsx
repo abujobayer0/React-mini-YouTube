@@ -3,7 +3,7 @@ import {VideoCard,ChannelCard, Preloader} from"./"
 const Videos = ({videos,direction}) => {
     if(!videos?.length)return <Preloader/>
     return (
-       <Stack direction={direction||"row"} flexWrap="wrap " gap={2} justifyContent={"start"} >
+       <Stack direction={direction||"row"} flexWrap="wrap " gap={2} justifyContent={"center"} >
 {videos.map((item,idx)=>(
     <Box key={idx}>
         {item.id.videoId&&<VideoCard video={item} />}
